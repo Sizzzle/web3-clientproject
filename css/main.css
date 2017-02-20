@@ -46,6 +46,26 @@ html * {
 /*==========================================================
 1.0 - TYPOGRAPHY
 ==========================================================*/
+@font-face {
+  font-family: 'DragonisComing';
+  src: url('DragonisComing.eot'); /* IE9 Compat Modes */
+  src: url('DragonisComing.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('DragonisComing.woff2') format('woff2'), /* Super Modern Browsers */
+       url('DragonisComing.woff') format('woff'), /* Pretty Modern Browsers */
+       url('DragonisComing.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('DragonisComing.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'EverAfter';
+  src: url('EverAfter.eot'); /* IE9 Compat Modes */
+  src: url('EverAfter.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('EverAfter.woff2') format('woff2'), /* Super Modern Browsers */
+       url('EverAfter.woff') format('woff'), /* Pretty Modern Browsers */
+       url('EverAfter.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('EverAfter.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 
 body {
 	font-family: 'Open Sans', sans-serif;

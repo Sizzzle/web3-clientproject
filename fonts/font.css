@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'DragonisComing';
+  src: url('DragonisComing.eot');
+  src: url('DragonisComing.woff2') format('woff2'),
+       url('DragonisComing.woff') format('woff'),
+       url('DragonisComing.ttf') format('truetype'),
+       url('DragonisComing.svg#DragonisComing') format('svg'),
+       url('DragonisComing.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
