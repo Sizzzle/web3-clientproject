@@ -168,6 +168,10 @@ nav {
 	justify-content: center;
 }
 
+#beer {
+	display: flex;
+}
+
 #about .container {
 	display: flex;           
     flex-direction: column;  
@@ -208,6 +212,10 @@ html {
 /*   5.2 - Text Colors  ----------------------------------*/
 
 /*   5.3 - Text Sizes  -----------------------------------*/
+
+h1 {
+	font-family: DragonisComing;
+}
 
 /*   5.4 - Alignments  -----------------------------------*/
 
