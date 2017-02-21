@@ -84,7 +84,7 @@ h2, h3, h4, .main-nav, .mobile-nav {
 	text-transform: uppercase;
 }
 
-.main-nav, .mobile-nav, #about {
+.main-nav, .mobile-nav, #intro {
 	text-align: center;
 }
 
@@ -154,7 +154,7 @@ nav {
 
 /*   3.1 - Site Structure  -------------------------------*/
 
-.hero, #about {
+.hero, #intro {
 	height: 100vh;
 }
 
@@ -163,13 +163,13 @@ nav {
 	flex-direction: column;
 }
 
-#about {
+#into {
 	display: flex;
 	justify-content: center;
 }
 
 
-#about .container {
+#intro .container {
 	display: flex;           
     flex-direction: column;  
     align-items: center;     
