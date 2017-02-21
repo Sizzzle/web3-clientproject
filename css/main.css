@@ -168,9 +168,6 @@ nav {
 	justify-content: center;
 }
 
-#beer {
-	display: flex;
-}
 
 #about .container {
 	display: flex;           
@@ -182,6 +179,33 @@ nav {
 	max-width: 1170px;
 }
 
+#beers {
+	display: flex;
+	justify-content: center;
+}
+
+#beers .container {
+justify-content: center;
+}
+
+#beers .left-column {
+justify-content: flex-start;
+flex-direction: column;
+}
+
+#beers .right-column {
+justify-content: flex-end;
+flex-direction: column;
+}
+
+.widget {
+
+}
+
+#instagram {
+	display: flex;
+	justify-content: center;
+}
 /*   3.2 - Section One  ----------------------------------*/
 
 img {
