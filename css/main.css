@@ -46,29 +46,30 @@ html * {
 /*==========================================================
 1.0 - TYPOGRAPHY
 ==========================================================*/
+
 @font-face {
   font-family: 'DragonisComing';
-  src: url('DragonisComing.eot'); /* IE9 Compat Modes */
-  src: url('DragonisComing.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('DragonisComing.woff2') format('woff2'), /* Super Modern Browsers */
-       url('DragonisComing.woff') format('woff'), /* Pretty Modern Browsers */
-       url('DragonisComing.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('DragonisComing.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('../fonts/DragonisComing.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/DragonisComing.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/DragonisComing.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/DragonisComing.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/DragonisComing.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/DragonisComing.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
   font-family: 'EverAfter';
-  src: url('EverAfter.eot'); /* IE9 Compat Modes */
-  src: url('EverAfter.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('EverAfter.woff2') format('woff2'), /* Super Modern Browsers */
-       url('EverAfter.woff') format('woff'), /* Pretty Modern Browsers */
-       url('EverAfter.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('EverAfter.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('../fonts/EverAfter.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/EverAfter.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/EverAfter.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/EverAfter.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/EverAfter.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/EverAfter.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
-
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	line-height: 1.7rem;
 	color: #D5D6D6;
 }
 
@@ -78,18 +79,47 @@ h2, h3, h4, .main-nav, .mobile-nav {
 
 /*   1.1 - Headings  -------------------------------------*/
 
+h1 span, h4, .tagline {
+	color: #F6921E
+}
+
+h1 {
+	font-family: 'EverAfter';
+	font-size: 8rem;
+	line-height: 3.5rem;
+	font-weight: 900;
+	letter-spacing: .5rem;
+}
+
+h1 span {
+	font-family: 'DragonisComing';
+	font-weight: 100;
+	font-size: 8rem;
+	letter-spacing: normal;
+}
+
+
+
 /*   1.2 - Body Copy  ------------------------------------*/
 
 .main-nav, .mobile-nav, h3, h4 {
 	text-transform: uppercase;
 }
 
-.main-nav, .mobile-nav, #intro {
+.main-nav, .mobile-nav, #about, #beers {
 	text-align: center;
 }
 
 /*   1.3 - Buttons  --------------------------------------*/
 
+.button {
+	border: thin solid #fff;
+	margin: 20px 10px;
+	padding: 4px 25px;
+	text-transform: uppercase;
+	text-decoration: none; 
+	display:inline-block;
+}
 
 /*==========================================================
 2.0 - NAVIGATION
@@ -105,7 +135,6 @@ a {
 }
 
 a:hover {
-	
 	transform: scale(1.1);
 	color: gray;
 	transition: all 0.6s;	
@@ -154,8 +183,9 @@ nav {
 
 /*   3.1 - Site Structure  -------------------------------*/
 
-.hero, #intro {
+.hero, #beers {
 	height: 100vh;
+	min-height: 600px;
 }
 
 .hero > .conatiner {
@@ -163,13 +193,20 @@ nav {
 	flex-direction: column;
 }
 
-#into {
+#about, #beers, .title {
 	display: flex;
 	justify-content: center;
 }
 
+.title {
+	display: flex;
+	flex-direction: column;
+	height: 800px;
+	align-items: center;
+	text-align: center;
+}
 
-#intro .container {
+#about .container {
 	display: flex;           
     flex-direction: column;  
     align-items: center;     
@@ -179,45 +216,6 @@ nav {
 	max-width: 1170px;
 }
 
-#beers {
-	display: flex;
-	justify-content: center;
-}
-
-#beers .container {
-justify-content: center;
-}
-
-#beers .left-column {
-justify-content: flex-start;
-flex-direction: column;
-}
-
-#beers .right-column {
-justify-content: flex-end;
-flex-direction: column;
-}
-
-.widget {
-
-}
-
-#instagram {
-	display: flex;
-	justify-content: center;
-}
-
-#about {
-	display: flex;
-}
-
-.left {
-	justify-content: flex-start;
-}
-
-.right {
-	justify-content: flex-end;
-}
 /*   3.2 - Section One  ----------------------------------*/
 
 img {
@@ -225,6 +223,54 @@ img {
 }
 
 /*   3.3 - Section Two  ----------------------------------*/
+
+.beer-list, .list-item {
+	display: flex
+}
+
+.column-left, .column-right {
+	display: flex;
+	flex-direction: column;
+}
+
+.column-left > .list-item {
+	padding: 40px 100px 40px 0px;
+	text-align: right;
+	max-width: 555px;
+}
+
+.column-right > .list-item {
+	padding: 40px 0px 40px 100px;
+	text-align: left;
+	max-width: 555px;
+}
+
+.beer-container {
+	max-width: 400px;
+}
+
+.list-item {
+	flex-direction: row;
+}
+
+.col-1-2 {
+	width: 50%,
+}
+
+.second {
+	order: 2;
+}
+
+.circle {
+    width:50px;
+    height: 50px;
+    background: white;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+
+    align-self: center;
+}
 
 
 /*==========================================================
@@ -249,15 +295,17 @@ html {
 
 /*   5.3 - Text Sizes  -----------------------------------*/
 
-h1 {
-	font-family: DragonisComing;
-}
-
 /*   5.4 - Alignments  -----------------------------------*/
 
 
 
+.p-b-lg {
+	padding: 25px 125px 150px 125px;
+}
 
+.p-t-lg {
+	padding-top: 150px;
+}
 
 
 
@@ -280,7 +328,31 @@ h1 {
 	.hero {
 		display: block;
 	}
+
+	.beer-list {
+		flex-direction: column;
+	}
+
+	.second {
+		order: -1;
+	}
+
+	.column-left > .list-item {
+		text-align: left;
+	}
+
+	.column-right > .list-item,
+	.column-left > .list-item, .p-b-lg {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
+
+
+
+
+
+
 
 
 
