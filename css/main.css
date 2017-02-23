@@ -216,6 +216,15 @@ nav {
 	max-width: 1170px;
 }
 
+#instagram {
+	display: flex;
+	justify-content: center;
+}
+
+.widget {
+
+}
+
 /*   3.2 - Section One  ----------------------------------*/
 
 img {
