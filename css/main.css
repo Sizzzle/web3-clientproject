@@ -225,6 +225,17 @@ nav {
 
 }
 
+#map {
+	display: flex;
+}
+
+#contact {
+	display: flex;
+}
+
+#social {
+	display: flex;
+}
 /*   3.2 - Section One  ----------------------------------*/
 
 img {
