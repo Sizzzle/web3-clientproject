@@ -106,7 +106,7 @@ h1 span {
 	text-transform: uppercase;
 }
 
-.main-nav, .mobile-nav, #about, #beers {
+.main-nav, .mobile-nav, #intro, #beers, #social {
 	text-align: center;
 }
 
@@ -142,6 +142,7 @@ a:hover {
 
 ul {
 	list-style: none;
+	font-size: .7rem;
 }
 
 nav {
@@ -183,38 +184,39 @@ nav {
 
 /*   3.1 - Site Structure  -------------------------------*/
 
-.hero, #beers {
+.hero, #social, #about {
 	height: 100vh;
-	min-height: 600px;
+	min-height: 1000px;
 }
 
-.hero > .conatiner {
-	display: flex;
-	flex-direction: column;
+#beers {
+	height: 130vh;
+	min-height: 1000px;
 }
 
-#about, #beers, .title {
-	display: flex;
+#intro, #beers, .title, #social, #about, #about > .container {
 	justify-content: center;
 }
 
 .title {
-	display: flex;
-	flex-direction: column;
 	height: 800px;
-	align-items: center;
 	text-align: center;
 }
 
-#about .container {
-	display: flex;           
-    flex-direction: column;  
+#intro, #beers, .title, .beer-list, .list-item,
+.hero > .conatiner, #intro .container, 
+.column-left, .column-right, #about, #about > .container, #social {
+	display: flex;
+}
+
+#intro .container, .title, #social, #about {
     align-items: center;     
 }
 
 .container {
 	max-width: 1170px;
 }
+
 
 /*   3.2 - Section One  ----------------------------------*/
 
@@ -224,12 +226,9 @@ img {
 
 /*   3.3 - Section Two  ----------------------------------*/
 
-.beer-list, .list-item {
-	display: flex
-}
 
-.column-left, .column-right {
-	display: flex;
+.column-left, .column-right, .hero > .conatiner,
+#intro .container, .title {
 	flex-direction: column;
 }
 
@@ -249,12 +248,12 @@ img {
 	max-width: 400px;
 }
 
-.list-item {
+.list-item, #about > .container {
 	flex-direction: row;
 }
 
 .col-1-2 {
-	width: 50%,
+	width: 50%;
 }
 
 .second {
@@ -307,6 +306,14 @@ html {
 	padding-top: 150px;
 }
 
+.p-lb-sm {
+	padding: 25px 0px 0px 35px;
+}
+
+.p-lb-sm > .tagline {
+	padding-top: 5px;
+}
+
 
 
 
@@ -318,18 +325,26 @@ html {
 
 	.mobile-btn-wrapper a {
 		padding-right: 0px;
+	}
 
+	#beers {
+		height: 230vh;
+	}
+
+
+	.col-1-2 {
+		width: 100%;
 	}
 	
 	.main-nav {
 		display: none;
 	}
 
-	.hero {
+	.hero, #beers, #social, #about {
 		display: block;
 	}
 
-	.beer-list {
+	.beer-list, #about > .container {
 		flex-direction: column;
 	}
 
