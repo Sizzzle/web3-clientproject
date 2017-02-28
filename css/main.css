@@ -73,13 +73,13 @@ body {
 	color: #D5D6D6;
 }
 
-h2, h3, h4, .main-nav, .mobile-nav {
+h2, h3, h4, h5, h6 .main-nav, .mobile-nav {
 	font-family: 'Montserrat', sans-serif;
 }
 
 /*   1.1 - Headings  -------------------------------------*/
 
-h1 span, h4, .tagline {
+h1 span, h4, h6, .tagline {
 	color: #F6921E
 }
 
@@ -98,7 +98,7 @@ h1 span {
 	letter-spacing: normal;
 }
 
-
+.
 
 /*   1.2 - Body Copy  ------------------------------------*/
 
@@ -209,7 +209,7 @@ nav {
 	display: flex;
 }
 
-#intro .container, .title, #social, #about, #contact  {
+#intro .container, .title, #social, #about, #contact, #map {
     align-items: center;     
 }
 
@@ -251,6 +251,7 @@ img {
 .list-item, #about > .container {
 	flex-direction: row;
 }
+
 
 .col-1-2 {
 	width: 50%;
