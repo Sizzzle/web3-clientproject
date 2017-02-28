@@ -184,7 +184,7 @@ nav {
 
 /*   3.1 - Site Structure  -------------------------------*/
 
-.hero, #social, #about {
+.hero, #social, #about, #contact {
 	height: 100vh;
 	min-height: 1000px;
 }
@@ -194,7 +194,7 @@ nav {
 	min-height: 1000px;
 }
 
-#intro, #beers, .title, #social, #about, #about > .container {
+#intro, #beers, .title, #social, #contact, #about, #about > .container {
 	justify-content: center;
 }
 
@@ -205,11 +205,11 @@ nav {
 
 #intro, #beers, .title, .beer-list, .list-item,
 .hero > .conatiner, #intro .container, 
-.column-left, .column-right, #about, #about > .container, #social {
+.column-left, .column-right, #about, #about > .container, #social, #contact  {
 	display: flex;
 }
 
-#intro .container, .title, #social, #about {
+#intro .container, .title, #social, #about, #contact  {
     align-items: center;     
 }
 
@@ -254,6 +254,10 @@ img {
 
 .col-1-2 {
 	width: 50%;
+}
+
+.col-1-3 {
+	width: 33%;
 }
 
 .second {
@@ -344,7 +348,7 @@ html {
 		display: none;
 	}
 
-	.hero, #beers, #social, #about, #contact{
+	.hero, #beers, #social, #about, #contact {
 		display: block;
 	}
 
