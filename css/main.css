@@ -240,6 +240,10 @@ body > header > div:first-child {
 	min-height: 500px;
 }
 
+.map {
+	height: 100vh;
+}
+
 #beers {
 	height: 130vh;
 	min-height: 1000px;
@@ -253,7 +257,7 @@ body > header > div:first-child {
 #intro, #beers, .title, .beer-list, .list-item,
 .hero > .container, #intro .container, 
 .column-left, .column-right, #about, #about > .container,
-#social, #contact {
+#social, #contact, .map {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -279,7 +283,7 @@ img {
 
 
 .column-left, .column-right, .hero > .conatiner,
-#intro .container, .title {
+#intro .container, .title, #contact {
 	flex-direction: column;
 }
 
@@ -328,7 +332,18 @@ img {
 
 
 
+
+
 /*   3.4 - Contact Section  ------------------------------*/
+
+.lg-circle {
+	width:700px;
+	height: 700px;
+	background: #A9AAAB;
+	-moz-border-radius: 350px;
+	-webkit-border-radius: 350px;
+	border-radius: 350px;
+}
 
 .row {
 	width: 100%;
@@ -395,6 +410,22 @@ body, a {
 
 
 
+@media screen and (max-width: 1200px) {
+	#contact > div {
+		max-width: 1050px;
+	}
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+	#contact > div {
+		max-width: 750px;
+	}
+
+}
+
 @media screen and (max-width: 800px) {
 	h1 {
 		font-size: 5rem;
@@ -407,6 +438,11 @@ body, a {
 		justify-content: center;
 	}
 
+	#contact > div {
+		max-width: 300px;
+	}
+
+
 	h1 span {
 		font-size: 5rem;
 		letter-spacing: normal;
@@ -416,7 +452,11 @@ body, a {
 		max-height: 100vh;
 	}
 
-	#social {
+	#about {
+		min-height: 135vh; 
+	}
+
+	#social, .map {
 		max-height: 50vh;
 	}
 
@@ -462,6 +502,10 @@ body, a {
 		padding: 50px 0px;
 	}
 
+	.beer-container {
+		max-width: 365px;
+	}
+
 	.border-sides {
 		border-style: none;
 	}
@@ -479,6 +523,16 @@ body, a {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+
+	.lg-circle {
+		width:250px;
+		height: 250px;
+		background: white;
+		-moz-border-radius: 225px;
+		-webkit-border-radius: 225px;
+		border-radius: 225px;
+	}
+
 }
 
 
@@ -488,6 +542,9 @@ body, a {
 		min-height: 350vh;
 	}
 
+	#contact > div {
+		max-width: 300px;
+	}
 
 
 
