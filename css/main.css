@@ -69,17 +69,16 @@ html * {
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	line-height: 1.7rem;
-	color: #D5D6D6;
+	line-height: 1.8rem;
 }
 
-h2, h3, h4, h5, h6 .main-nav, .mobile-nav {
+h2, h3, h4, .main-nav, .mobile-nav, .tagline {
 	font-family: 'Montserrat', sans-serif;
 }
 
 /*   1.1 - Headings  -------------------------------------*/
 
-h1 span, h4, h6, .tagline {
+h1 span, h4, .tagline, a:hover {
 	color: #F6921E
 }
 
@@ -89,6 +88,7 @@ h1 {
 	line-height: 3.5rem;
 	font-weight: 900;
 	letter-spacing: .5rem;
+	color: #D5D6D6;
 }
 
 h1 span {
@@ -98,11 +98,38 @@ h1 span {
 	letter-spacing: normal;
 }
 
-.
+h3 {
+	font-size: 1.6rem;
+	font-weight: 900;
+	letter-spacing: .1rem;
+	color: #D5D6D6;
+}
+
+h4, .mobile-nav li {
+	font-weight: 900;
+	letter-spacing: .2rem;
+	padding-bottom: .5rem;
+}
+
+.tagline {
+	font-size: .7rem;
+	letter-spacing: .1rem;
+	padding: 1rem 0 2.5rem 0;
+}
+
+.mobile-nav {
+	line-height: 1.5rem;
+}
+
+.mobile-nav li {
+	font-size: .9rem;
+}
+
+
 
 /*   1.2 - Body Copy  ------------------------------------*/
 
-.main-nav, .mobile-nav, h3, h4 {
+.main-nav, .mobile-nav, h3, h4, header p {
 	text-transform: uppercase;
 }
 
@@ -131,12 +158,9 @@ h1 span {
 a {
 	text-decoration: none;
 	padding: 0 2rem;
-	color: #D5D6D6;
 }
 
 a:hover {
-	transform: scale(1.1);
-	color: gray;
 	transition: all 0.6s;	
 }
 
@@ -147,10 +171,27 @@ ul {
 
 nav {
 	display: flex;
-	padding: 6rem 10%;
+	flex-wrap: wrap;
+	padding: 2rem 10%;
 	align-items: center;
 	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+	background-color: rgba(26,26,26,.95);
 }
+
+/*
+body > header > div:first-child {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+}
+*/
 
 .logo:hover {
 	transform: scale(1.1);
@@ -159,6 +200,7 @@ nav {
 
 .main-nav {
 	display: flex;
+	letter-spacing: .1rem;
 }
 
 .main-logo {
@@ -167,6 +209,10 @@ nav {
 
 .mobile-nav {
 	display: none;
+	width: 100%;
+	height: 100vh;
+	font-size: 2rem;
+	line-height: 4rem;
 }
 
 .mobile-btn-wrapper {
@@ -184,9 +230,14 @@ nav {
 
 /*   3.1 - Site Structure  -------------------------------*/
 
-.hero, #social, #about, #contact {
+.hero, #about, #contact {
 	height: 100vh;
-	min-height: 1000px;
+	min-height: 800px;
+}
+
+#social {
+	height: 100vh;
+	min-height: 500px;
 }
 
 #beers {
@@ -194,27 +245,27 @@ nav {
 	min-height: 1000px;
 }
 
-#intro, #beers, .title, #social, #contact, #about, #about > .container {
-	justify-content: center;
-}
-
 .title {
-	height: 800px;
+	height: 1200px;
 	text-align: center;
 }
 
 #intro, #beers, .title, .beer-list, .list-item,
-.hero > .conatiner, #intro .container, 
-.column-left, .column-right, #about, #about > .container, #social, #contact  {
+.hero > .container, #intro .container, 
+.column-left, .column-right, #about, #about > .container,
+#social, #contact {
 	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-#intro .container, .title, #social, #about, #contact, #map {
-    align-items: center;     
-}
 
 .container {
 	max-width: 1170px;
+}
+
+#contact > div {
+	width: 1170px;
 }
 
 
@@ -252,13 +303,12 @@ img {
 	flex-direction: row;
 }
 
-
 .col-1-2 {
 	width: 50%;
 }
 
-.col-1-3 {
-	width: 33%;
+.txt-cntr {
+	text-align: center;
 }
 
 .second {
@@ -275,6 +325,26 @@ img {
 
     align-self: center;
 }
+
+
+
+/*   3.4 - Contact Section  ------------------------------*/
+
+.row {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.border-sides {
+	padding: 0px 150px;
+	border-style: solid;
+	border-left: .2px thin #A9AAAB;
+	border-right: .2px thin #A9AAAB;
+	border-top: none;
+	border-bottom: none;
+}
+
 
 /*==========================================================
 4.0 - MEDIA
@@ -295,6 +365,10 @@ html {
 /*   5.1 - Background Colors  ----------------------------*/
 
 /*   5.2 - Text Colors  ----------------------------------*/
+
+body, a {
+	color: #A9AAAB;
+}
 
 /*   5.3 - Text Sizes  -----------------------------------*/
 
@@ -322,25 +396,53 @@ html {
 
 
 @media screen and (max-width: 800px) {
+	h1 {
+		font-size: 5rem;
+		letter-spacing: .2rem;
+	}
+
+	.mobile-nav {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	h1 span {
+		font-size: 5rem;
+		letter-spacing: normal;
+	}
+
+	.hero, #intro, #contact {
+		max-height: 100vh;
+	}
+
+	#social {
+		max-height: 50vh;
+	}
+
+	#beers {
+		min-height: 300vh;
+	}
+
+	.title {
+		height: 800px;
+	}
+
 	.mobile-btn-wrapper {
 		display: flex;
 		justify-content: flex-end;
+	}
+
+	nav {
+		padding: 1rem 10%;
 	}
 
 	.mobile-btn-wrapper a {
 		padding-right: 0px;
 	}
 
-	#beers {
-		height: 230vh;
-	}
-
 
 	.col-1-2 {
-		width: 100%;
-	}
-
-	.col-1-3 {
 		width: 100%;
 	}
 	
@@ -348,12 +450,20 @@ html {
 		display: none;
 	}
 
-	.hero, #beers, #social, #about, #contact {
+	.hero, #beers, #social, #about {
 		display: block;
 	}
 
-	.beer-list, #contact, #about > .container {
+	.beer-list, #about > .container, .row {
 		flex-direction: column;
+	}
+
+	.row > div {
+		padding: 50px 0px;
+	}
+
+	.border-sides {
+		border-style: none;
 	}
 
 	.second {
@@ -372,6 +482,17 @@ html {
 }
 
 
+@media screen and (max-width: 500px) {
+
+	#beers {
+		min-height: 350vh;
+	}
+
+
+
+
+
+}
 
 
 
