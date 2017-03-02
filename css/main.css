@@ -79,7 +79,7 @@ h2, h3, h4, .main-nav, .mobile-nav, .tagline {
 /*   1.1 - Headings  -------------------------------------*/
 
 h1 span, h4, .tagline, a:hover {
-	color: #F6921E
+	color: #F6921E;
 }
 
 h1 {
@@ -89,6 +89,8 @@ h1 {
 	font-weight: 900;
 	letter-spacing: .5rem;
 	color: #D5D6D6;
+	padding-top: 50px;
+	margin-bottom: 150px; 
 }
 
 h1 span {
@@ -164,6 +166,11 @@ a:hover {
 	transition: all 0.6s;	
 }
 
+.text > a {
+	font-weight: 100;
+	padding: 1.5rem 3rem;
+}
+
 ul {
 	list-style: none;
 	font-size: .7rem;
@@ -230,7 +237,7 @@ body > header > div:first-child {
 
 /*   3.1 - Site Structure  -------------------------------*/
 
-.hero, #about, #contact {
+.hero, #about {
 	height: 100vh;
 	min-height: 800px;
 }
@@ -241,10 +248,10 @@ body > header > div:first-child {
 }
 
 .map {
-	height: 100vh;
+	height: 30vh;
 }
 
-#beers {
+#beers, #contact {
 	height: 130vh;
 	min-height: 1000px;
 }
@@ -254,13 +261,18 @@ body > header > div:first-child {
 	text-align: center;
 }
 
-#intro, #beers, .title, .beer-list, .list-item,
+#intro, #beers, .title, .list-item,
 .hero > .container, #intro .container, 
 .column-left, .column-right, #about, #about > .container,
 #social, #contact, .map {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.beer-list {
+	display: flex;
+	align-items: flex-start;
 }
 
 
@@ -336,14 +348,15 @@ img {
 
 /*   3.4 - Contact Section  ------------------------------*/
 
-.lg-circle {
-	width:700px;
-	height: 700px;
-	background: #A9AAAB;
-	-moz-border-radius: 350px;
-	-webkit-border-radius: 350px;
-	border-radius: 350px;
+#map {
+	width: 1170px;
+	height: 500px;
+	margin-bottom: 100px;
 }
+
+#map img {  
+    max-width: none;   
+} 
 
 .row {
 	width: 100%;
@@ -351,13 +364,23 @@ img {
 	justify-content: space-between;
 }
 
+.title > .row {
+	width: 550px;
+	padding-top: 50px;
+}
+
+
 .border-sides {
 	padding: 0px 150px;
-	border-style: solid;
-	border-left: .2px thin #A9AAAB;
-	border-right: .2px thin #A9AAAB;
+	border-style: thin;
+	border-left: 1px solid #A9AAAB;
+	border-right: .1px solid #A9AAAB;
 	border-top: none;
 	border-bottom: none;
+}
+
+#contact > .container {
+	margin-top: 200px;
 }
 
 
@@ -372,6 +395,52 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.svg-wrapper {
+  height: 50px;
+    margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 250px;
+}
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 150 540;
+  stroke-dashoffset: -352;
+  stroke-width: 1px;
+  stroke: #A9AAAB;
+}
+
+.text {
+  color: #A9AAAB;
+  font-family: 'Montserrat';
+  font-size: 15px;
+  letter-spacing: 2px;
+  line-height: 32px;
+  position: relative;
+  top: -50px;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 150 540;
+    stroke-dashoffset: -352;
+    stroke-width: 1px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 1px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+
 
 /*==========================================================
 5.0 - UTILITY
@@ -388,8 +457,6 @@ body, a {
 /*   5.3 - Text Sizes  -----------------------------------*/
 
 /*   5.4 - Alignments  -----------------------------------*/
-
-
 
 .p-b-lg {
 	padding: 25px 125px 150px 125px;
@@ -430,6 +497,7 @@ body, a {
 	h1 {
 		font-size: 5rem;
 		letter-spacing: .2rem;
+		margin-bottom: 100px;
 	}
 
 	.mobile-nav {
@@ -466,6 +534,10 @@ body, a {
 
 	.title {
 		height: 800px;
+	}
+
+	.title > .row {
+		padding-top: 0px;
 	}
 
 	.mobile-btn-wrapper {
@@ -524,13 +596,9 @@ body, a {
 		padding-right: 20px;
 	}
 
-	.lg-circle {
+	#map {
 		width:250px;
 		height: 250px;
-		background: white;
-		-moz-border-radius: 225px;
-		-webkit-border-radius: 225px;
-		border-radius: 225px;
 	}
 
 }
