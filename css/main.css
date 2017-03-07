@@ -70,6 +70,7 @@ html * {
 body {
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.8rem;
+	font-size: 1rem;
 }
 
 h2, h3, h4, .main-nav, .mobile-nav, .tagline {
@@ -248,9 +249,6 @@ body > header > div:first-child {
 	min-height: 500px;
 }
 
-.map {
-	height: 30vh;
-}
 
 #beers, #contact {
 	height: 130vh;
@@ -404,7 +402,7 @@ html {
 }
 
 .svg-wrapper {
-  height: 50px;
+  height: 30px;
     margin: 0 auto;
   position: relative;
   top: 50%;
@@ -489,21 +487,30 @@ body, a {
 
 @media screen and (max-width: 1200px) {
 	#contact > div {
-		max-width: 1050px;
+		max-width: 90vw;
 	}
 
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 
 	#contact > div {
-		max-width: 750px;
+		max-width: 90vw;
 	}
 
 }
 
 @media screen and (max-width: 800px) {
+	p, .txt-cntr {
+		font-size: .9rem;
+		line-height: 1.6rem;
+	}
+
+	.main-nav {
+		flex-direction: column;
+	}
+
 	h1 {
 		font-size: 5rem;
 		letter-spacing: .2rem;
@@ -520,6 +527,10 @@ body, a {
 		max-width: 300px;
 	}
 
+	img {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
 
 	h1 span {
 		font-size: 5rem;
@@ -534,12 +545,12 @@ body, a {
 		min-height: 135vh; 
 	}
 
-	#social, .map {
+	#social {
 		max-height: 50vh;
 	}
 
 	#beers {
-		min-height: 300vh;
+		min-height: 360vh;
 	}
 
 	#contact {
@@ -567,6 +578,9 @@ body, a {
 		padding-right: 0px;
 	}
 
+	.svg {
+		padding-left: 0px;
+	}
 
 	.col-1-2 {
 		width: 100%;
@@ -605,13 +619,15 @@ body, a {
 	}
 
 	.column-right > .list-item,
-	.column-left > .list-item, .p-b-lg {
-		padding-left: 20px;
-		padding-right: 20px;
+	.column-left > .list-item,
+	.p-b-lg, img, header > p, 
+	#about p, .tagline {
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
 
-	#map {
-		max-width:80%;
+	#contact > div {
+		max-width: 90vw;
 	}
 
 }
@@ -624,18 +640,48 @@ body, a {
 	}
 
 	#contact > div {
-		max-width: 400px;
+		max-width: 90vw;
 	}
-
-	
-
-
-
 
 }
 
 
+@media screen and (max-width: 400px) {
 
+	#beers {
+		min-height: 475vh;
+	}
+
+	#contact {
+		min-height: 200vh;
+	}
+
+	#contact > .container {
+		margin-top: 100px;
+	}
+
+	.row > div {
+		padding: 30px 0px;
+	}
+
+	h1 {
+		font-size: 4rem;
+		padding-top: 0px;
+		margin-bottom: 55px;
+		margin-top: -100px;
+		line-height: 2rem;
+	}
+
+	h1 span {
+		font-size: 4rem;
+		line-height: 3rem;
+	}
+
+	#intro {
+		min-height: 125vh;
+	}
+
+}
 
 
 
