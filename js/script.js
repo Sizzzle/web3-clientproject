@@ -3,7 +3,7 @@
 
 // Draw-in Animation
 var $svg = $('svg').drawsvg({
-      duration: 5000,
+      duration: 3000,
       easing: 'linear'
     });
 

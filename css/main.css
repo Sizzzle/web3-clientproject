@@ -11,22 +11,23 @@
 >>> TABLE OF CONTENTS:
 ==============================================================
 1.0 - Typography
-	1.1 - Headings
-	1.2 - Body Copy
-	1.3 - Buttons 
+		1.1 - Headings
+		1.2 - Body Copy
+		1.3 - Buttons 
 2.0 - Navigation Menus
-	2.1 - Main Menu
-	2.2 - Footer Menu
+		2.1 - Main Menu
+		2.2 - Footer Menu
 3.0 - Content
-	3.1 - Site Structure
-	3.2 - Section 
-	3.3 - Section
+		3.1 - Site Structure
+		3.2 - Section 
+		3.3 - Section
 4.0 - Media
 5.0 - Utility
-	5.1 - Background Colors
-	5.2 - Text Colors
-	5.3 - Text Sizes
-	5.4 - Alignments
+		5.1 - Background Colors
+		5.2 - Text Colors
+		5.3 - Text Sizes
+		5.4 - Alignments
+6.0 - Media Queries
 ===========================================================*/
 
 *, *:after, *:before {
@@ -41,7 +42,6 @@ html * {
   padding: 0;
   margin: 0;
 }
-
 
 /*==========================================================
 1.0 - TYPOGRAPHY
@@ -92,6 +92,7 @@ h1 {
 	padding-top: 50px;
 	margin-bottom: 150px; 
 }
+
 
 h1 span {
 	font-family: 'DragonisComing';
@@ -295,18 +296,18 @@ img {
 
 
 .column-left, .column-right, .hero > .conatiner,
-#intro .container, .title, #contact {
+#intro .container, .title, #contact, .svg {
 	flex-direction: column;
 }
 
 .column-left > .list-item {
-	padding: 40px 100px 40px 0px;
+	padding: 40px 30px 40px 0px;
 	text-align: right;
 	max-width: 555px;
 }
 
 .column-right > .list-item {
-	padding: 40px 0px 40px 100px;
+	padding: 40px 0px 40px 30px;
 	text-align: left;
 	max-width: 555px;
 }
@@ -342,7 +343,13 @@ img {
     align-self: center;
 }
 
-
+.svg {
+	width: 110px;
+	height: 110px;
+	padding: 10px 25px;
+	display: flex;
+	align-self: flex-start;
+}
 
 
 
@@ -475,6 +482,9 @@ body, a {
 }
 
 
+/*==========================================================
+6.0 - MEDIA QUERIES
+==========================================================*/
 
 
 @media screen and (max-width: 1200px) {
@@ -506,7 +516,7 @@ body, a {
 		justify-content: center;
 	}
 
-	#contact > div {
+	#contact > .container {
 		max-width: 300px;
 	}
 
@@ -530,6 +540,10 @@ body, a {
 
 	#beers {
 		min-height: 300vh;
+	}
+
+	#contact {
+		min-height: 200vh;
 	}
 
 	.title {
@@ -597,8 +611,7 @@ body, a {
 	}
 
 	#map {
-		width:250px;
-		height: 250px;
+		max-width:80%;
 	}
 
 }
@@ -611,8 +624,10 @@ body, a {
 	}
 
 	#contact > div {
-		max-width: 300px;
+		max-width: 400px;
 	}
+
+	
 
 
 
