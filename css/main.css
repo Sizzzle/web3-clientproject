@@ -178,18 +178,6 @@ ul {
 	font-size: .7rem;
 }
 
-footer li {
-	font-size: 2rem;
-}
-
-footer {
-	display: flex;
-	padding: 2rem 35%;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-}
-
 nav {
 	display: flex;
 	flex-wrap: wrap;
@@ -243,6 +231,17 @@ body > header > div:first-child {
 
 /*   2.1 - Footer Menu  ----------------------------------*/
 
+footer li {
+	font-size: 2rem;
+}
+
+footer {
+	display: flex;
+	padding: 2rem 35%;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
 
 /*==========================================================
 3.0 - CONTENT
