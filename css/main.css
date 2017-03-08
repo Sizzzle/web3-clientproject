@@ -231,10 +231,6 @@ body > header > div:first-child {
 
 /*   2.1 - Footer Menu  ----------------------------------*/
 
-footer li {
-	font-size: 2rem;
-}
-
 footer {
 	display: flex;
 	padding: 2rem 35%;
