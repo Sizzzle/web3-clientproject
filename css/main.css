@@ -178,6 +178,10 @@ ul {
 	font-size: .7rem;
 }
 
+footer li {
+	font-size: 2rem;
+}
+
 nav {
 	display: flex;
 	flex-wrap: wrap;
@@ -263,7 +267,7 @@ body > header > div:first-child {
 #intro, #beers, .title, .list-item,
 .hero > .container, #intro .container, 
 .column-left, .column-right, #about, #about > .container,
-#social, #contact, .map {
+#social, #contact, .map, footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
