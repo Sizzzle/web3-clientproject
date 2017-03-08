@@ -232,13 +232,16 @@ body > header > div:first-child {
 /*   2.1 - Footer Menu  ----------------------------------*/
 
 footer {
-	display: flex;
-	padding: 2rem 35%;
-	align-items: center;
-	justify-content: space-between;
 	width: 100%;
+	background-color: rgba(26,26,26,.95);
+	padding: 2rem 10%;
+	align-items: center;
 }
 
+footer p {
+	font-size: .5rem;
+	text-align: center;
+}
 /*==========================================================
 3.0 - CONTENT
 ==========================================================*/
