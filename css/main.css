@@ -182,6 +182,14 @@ footer li {
 	font-size: 2rem;
 }
 
+footer {
+	display: flex;
+	padding: 2rem 35%;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
 nav {
 	display: flex;
 	flex-wrap: wrap;
