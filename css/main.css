@@ -137,7 +137,7 @@ h4, .mobile-nav li {
 	text-transform: uppercase;
 }
 
-.main-nav, .mobile-nav, #intro, #beers, #social {
+.main-nav, .mobile-nav, #intro, #beers, #social, #contact {
 	text-align: center;
 }
 
@@ -211,6 +211,7 @@ body > header > div:first-child {
 	display: flex;
 	letter-spacing: .1rem;
 }
+
 
 .main-logo {
 
@@ -488,7 +489,6 @@ body, a {
 .p-lb-sm > .tagline {
 	padding-top: 5px;
 }
-
 
 /*==========================================================
 6.0 - MEDIA QUERIES
