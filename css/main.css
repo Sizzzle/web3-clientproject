@@ -94,7 +94,6 @@ h1 {
 	margin-bottom: 150px; 
 }
 
-
 h1 span {
 	font-family: 'DragonisComing';
 	font-weight: 100;
@@ -128,7 +127,6 @@ h4, .mobile-nav li {
 .mobile-nav li {
 	font-size: .9rem;
 }
-
 
 
 /*   1.2 - Body Copy  ------------------------------------*/
@@ -216,7 +214,6 @@ body > header > div:first-child {
 	letter-spacing: .1rem;
 }
 
-
 .main-logo {
 
 }
@@ -288,7 +285,6 @@ footer p {
 	display: flex;
 	align-items: flex-start;
 }
-
 
 .container {
 	max-width: 1170px;
@@ -364,8 +360,6 @@ img {
 	align-self: flex-start;
 }
 
-
-
 /*   3.4 - Contact Section  ------------------------------*/
 
 #map {
@@ -389,7 +383,6 @@ img {
 	padding-top: 50px;
 }
 
-
 .border-sides {
 	padding: 0px 150px;
 	border-style: thin;
@@ -402,7 +395,6 @@ img {
 #contact > .container {
 	margin-top: 200px;
 }
-
 
 /*==========================================================
 4.0 - MEDIA
@@ -696,33 +688,3 @@ body, a {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
