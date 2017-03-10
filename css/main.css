@@ -109,7 +109,7 @@ h3 {
 	color: #D5D6D6;
 }
 
-h4, .mobile-nav li {
+h4, .mobile-nav li, .text a {
 	font-weight: 900;
 	letter-spacing: .2rem;
 	padding-bottom: .5rem;
@@ -137,7 +137,7 @@ h4, .mobile-nav li {
 	text-transform: uppercase;
 }
 
-.main-nav, .mobile-nav, #intro, #beers, #social {
+.main-nav, .mobile-nav, #intro, #beers, #social, #contact {
 	text-align: center;
 }
 
@@ -164,12 +164,16 @@ a {
 	padding: 0 2rem;
 }
 
+.social-nav a {
+	padding: 0 .25rem 0 .25rem;
+}
+
 a:hover {
 	transition: all 0.6s;	
 }
 
 .text > a {
-	font-weight: 100;
+
 	padding: 1.5rem 3rem;
 }
 
@@ -212,6 +216,7 @@ body > header > div:first-child {
 	letter-spacing: .1rem;
 }
 
+
 .main-logo {
 
 }
@@ -231,7 +236,17 @@ body > header > div:first-child {
 
 /*   2.1 - Footer Menu  ----------------------------------*/
 
+footer {
+	width: 100%;
+	background-color: rgba(26,26,26,.95);
+	padding: 2rem 10%;
+	align-items: center;
+}
 
+footer p {
+	font-size: .5rem;
+	text-align: center;
+}
 /*==========================================================
 3.0 - CONTENT
 ==========================================================*/
@@ -263,7 +278,7 @@ body > header > div:first-child {
 #intro, #beers, .title, .list-item,
 .hero > .container, #intro .container, 
 .column-left, .column-right, #about, #about > .container,
-#social, #contact, .map {
+#social, #contact, .map, footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -479,7 +494,6 @@ body, a {
 	padding-top: 5px;
 }
 
-
 /*==========================================================
 6.0 - MEDIA QUERIES
 ==========================================================*/
@@ -489,7 +503,27 @@ body, a {
 	#contact > div {
 		max-width: 90vw;
 	}
+	
+	#contact {
+		height: 100vh;
+		min-height: 1366px;
+	}
 
+	
+	#about {
+		height: 50vh;
+		min-height: 690px;
+	}
+	
+	#social {
+		height: 50vh;
+		min-height: 690px;
+	}
+	
+	#beers {
+		height: 100vh;
+		min-height: 1366px;
+	}
 
 }
 
@@ -502,8 +536,35 @@ body, a {
 }
 
 @media screen and (max-width: 800px) {
+	
+	#contact {
+		height: 100vh;
+		min-height: 1024px;
+	}
+	
+	#contact > .container {
+		margin-top: 75px;
+	}
+
+	
+	#about {
+		height: 120vh;
+		min-height: 1024px;
+	}
+	
+	#social {
+		height: 75vh;
+		min-height: 510px;
+	}
+	
+	#beers {
+		height: 200vh;
+		min-height: 2024px;
+	}
+
+	
 	p, .txt-cntr {
-		font-size: .9rem;
+		font-size: 2vw;
 		line-height: 1.6rem;
 	}
 
@@ -515,6 +576,11 @@ body, a {
 		font-size: 5rem;
 		letter-spacing: .2rem;
 		margin-bottom: 100px;
+	}
+	
+	.title > .row {
+		width: 100%;	
+		
 	}
 
 	.mobile-nav {
@@ -537,28 +603,13 @@ body, a {
 		letter-spacing: normal;
 	}
 
-	.hero, #intro, #contact {
+	.hero, #intro {
 		max-height: 100vh;
 	}
 
-	#about {
-		min-height: 135vh; 
-	}
-
-	#social {
-		max-height: 50vh;
-	}
-
-	#beers {
-		min-height: 360vh;
-	}
-
-	#contact {
-		min-height: 200vh;
-	}
-
 	.title {
-		height: 800px;
+		height: 100vh;
+		min-height: 800px;
 	}
 
 	.title > .row {
@@ -599,7 +650,7 @@ body, a {
 	}
 
 	.row > div {
-		padding: 50px 0px;
+		padding: 35px 0px;
 	}
 
 	.beer-container {
@@ -634,26 +685,92 @@ body, a {
 
 
 @media screen and (max-width: 500px) {
+	
+	#contact {
+		height: 130vh;
+		min-height: 736px;
+	}
+	
+	#contact > .container {
+		margin-top: 75px;
+	}
 
+	
+	#about {
+		height: 130vh;
+		min-height: 736px;
+	}
+	
+	#social {
+		height: 75vh;
+		min-height: 510px;
+	}
+	
 	#beers {
-		min-height: 350vh;
+		height: 300vh;
+		min-height: 736px;
 	}
 
 	#contact > div {
 		max-width: 90vw;
 	}
+	
+	p, .txt-cntr {
+		font-size: 2.5vw;
+		line-height: 1.6rem;
+	}
+	
+	#contact .row > div {
+		padding: 25px 0px;
+	}
+
 
 }
 
 
 @media screen and (max-width: 400px) {
 
-	#beers {
-		min-height: 475vh;
+	#contact {
+		height: 130vh;
+		min-height: 736px;
+	}
+	
+	#contact > .container {
+		margin-top: 75px;
 	}
 
-	#contact {
-		min-height: 200vh;
+	
+	#about {
+		height: 140vh;
+		min-height: 736px;
+	}
+	
+	#social {
+		height: 75vh;
+		min-height: 510px;
+	}
+	
+	#beers {
+		height: 335vh;
+		min-height: 736px;
+	}
+
+	#contact > div {
+		max-width: 90vw;
+	}
+	
+	p, .txt-cntr {
+		font-size: 3.7vw;
+		line-height: 1.4rem;
+	}
+
+
+	.hero {
+		min-height: 667px;
+	}
+
+	.title {
+		min-height: 800px;
 	}
 
 	#contact > .container {
@@ -678,18 +795,75 @@ body, a {
 	}
 
 	#intro {
-		min-height: 125vh;
+		min-height: 105vh;
 	}
 
 }
 
 
 
+@media screen and (max-width: 330px) {
+
+
+	#contact {
+		height: 210vh;
+		min-height: 568px;
+	}
+	
+	#contact > .container {
+		margin-top: 25px;
+	}
+
+	
+	#about {
+		height: 110vh;
+		min-height: 590px;
+	}
+	
+	#social {
+		height: 70vh;
+		min-height: 490px;
+	}
+	
+	#beers {
+		height: 390vh;
+		min-height: 736px;
+	}
+
+	#contact > div {
+		max-width: 90vw;
+	}
+	
+	p, .txt-cntr {
+		font-size: 3.7vw;
+		line-height: 1.4rem;
+	}
+
+	#beers p {
+		font-size: 
+
+	}
+
+
+	.hero {
+		min-height: 667px;
+	}
+
+	.title {
+		min-height: 800px;
+	}
+
+	#intro {
+		min-height: 100vh;
+	}
+
+	.p-b-lg {
+		padding-bottom: 100px;
+	}
 
 
 
-
-
+}
 
 
 
