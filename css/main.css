@@ -73,7 +73,7 @@ body {
 	font-size: 1rem;
 }
 
-h2, h3, h4, .main-nav, .mobile-nav, .tagline {
+h3, h4, .main-nav, .mobile-nav, .tagline {
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -85,10 +85,9 @@ h1 span, h4, .tagline, a:hover {
 
 h1 {
 	font-family: 'EverAfter';
-	font-size: 8rem;
+	font-size: 10rem;
 	line-height: 3.5rem;
-	font-weight: 900;
-	letter-spacing: .5rem;
+	font-weight: 400;
 	color: #D5D6D6;
 	padding-top: 50px;
 	margin-bottom: 150px; 
@@ -100,6 +99,14 @@ h1 span {
 	font-weight: 100;
 	font-size: 8rem;
 	letter-spacing: normal;
+}
+
+.kern {
+	font-family: 'EverAfter';
+	font-size: 10rem;
+	font-weight: 400;
+	color: #D5D6D6;
+	padding-right: 5px;
 }
 
 h3 {
@@ -185,7 +192,7 @@ ul {
 nav {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 2rem 10%;
+	padding: 1rem 10%;
 	align-items: center;
 	justify-content: space-between;
 	position: fixed;
@@ -196,15 +203,18 @@ nav {
 	background-color: rgba(26,26,26,.95);
 }
 
-/*
-body > header > div:first-child {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  width: 100%;
+.logo {
+	font-size: .6rem;
+	font-weight: 700;
+	font-family: 'EverAfter';
+	line-height: .45rem;
+	text-align: center;
+	padding-top: 5.8px;
 }
-*/
+
+.logo a {
+	padding: 0;
+}
 
 .logo:hover {
 	transform: scale(1.1);
@@ -214,11 +224,6 @@ body > header > div:first-child {
 .main-nav {
 	display: flex;
 	letter-spacing: .1rem;
-}
-
-
-.main-logo {
-
 }
 
 .mobile-nav {
@@ -232,7 +237,6 @@ body > header > div:first-child {
 .mobile-btn-wrapper {
 	display: none;
 }
-
 
 /*   2.1 - Footer Menu  ----------------------------------*/
 
@@ -250,7 +254,6 @@ footer p {
 /*==========================================================
 3.0 - CONTENT
 ==========================================================*/
-
 
 /*   3.1 - Site Structure  -------------------------------*/
 
@@ -289,7 +292,6 @@ footer p {
 	align-items: flex-start;
 }
 
-
 .container {
 	max-width: 1170px;
 }
@@ -298,7 +300,6 @@ footer p {
 	width: 1170px;
 }
 
-
 /*   3.2 - Section One  ----------------------------------*/
 
 img {
@@ -306,7 +307,6 @@ img {
 }
 
 /*   3.3 - Section Two  ----------------------------------*/
-
 
 .column-left, .column-right, .hero > .conatiner,
 #intro .container, .title, #contact, .svg {
@@ -365,7 +365,6 @@ img {
 }
 
 
-
 /*   3.4 - Contact Section  ------------------------------*/
 
 #map {
@@ -389,9 +388,8 @@ img {
 	padding-top: 50px;
 }
 
-
 .border-sides {
-	padding: 0px 150px;
+	padding: 0px 12%;
 	border-style: thin;
 	border-left: 1px solid #A9AAAB;
 	border-right: .1px solid #A9AAAB;
@@ -402,7 +400,6 @@ img {
 #contact > .container {
 	margin-top: 200px;
 }
-
 
 /*==========================================================
 4.0 - MEDIA
@@ -460,7 +457,6 @@ html {
   -webkit-animation: 0.5s draw linear forwards;
   animation: 0.5s draw linear forwards;
 }
-
 
 /*==========================================================
 5.0 - UTILITY
@@ -524,6 +520,10 @@ body, a {
 		height: 100vh;
 		min-height: 1366px;
 	}
+	
+	.border-sides {
+		padding: 0px 9%;
+	}
 
 }
 
@@ -532,6 +532,11 @@ body, a {
 	#contact > div {
 		max-width: 90vw;
 	}
+	
+	.border-sides {
+		padding: 0px 6%;
+	}
+
 
 }
 
@@ -549,12 +554,12 @@ body, a {
 	
 	#about {
 		height: 120vh;
-		min-height: 1024px;
+		min-height: 1200px;
 	}
 	
 	#social {
 		height: 75vh;
-		min-height: 510px;
+		min-height: 710px;
 	}
 	
 	#beers {
@@ -571,10 +576,12 @@ body, a {
 	.main-nav {
 		flex-direction: column;
 	}
+	
 
-	h1 {
+
+
+	h1, .kern {
 		font-size: 5rem;
-		letter-spacing: .2rem;
 		margin-bottom: 100px;
 	}
 	
@@ -698,7 +705,8 @@ body, a {
 	
 	#about {
 		height: 130vh;
-		min-height: 736px;
+		min-height: 536px;
+		max-height: 7800px;
 	}
 	
 	#social {
@@ -709,6 +717,7 @@ body, a {
 	#beers {
 		height: 300vh;
 		min-height: 736px;
+		max-height: 2200px;
 	}
 
 	#contact > div {
@@ -716,7 +725,7 @@ body, a {
 	}
 	
 	p, .txt-cntr {
-		font-size: 2.5vw;
+		font-size: 3.5vw;
 		line-height: 1.6rem;
 	}
 	
@@ -743,6 +752,7 @@ body, a {
 	#about {
 		height: 140vh;
 		min-height: 736px;
+		max-height: 850px;
 	}
 	
 	#social {
@@ -753,6 +763,7 @@ body, a {
 	#beers {
 		height: 335vh;
 		min-height: 736px;
+		max-height: 2200px;
 	}
 
 	#contact > div {
@@ -760,7 +771,7 @@ body, a {
 	}
 	
 	p, .txt-cntr {
-		font-size: 3.7vw;
+		font-size: 3.5vw;
 		line-height: 1.4rem;
 	}
 
@@ -781,8 +792,8 @@ body, a {
 		padding: 30px 0px;
 	}
 
-	h1 {
-		font-size: 4rem;
+	h1, .kern {
+		font-size: 5rem;
 		padding-top: 0px;
 		margin-bottom: 55px;
 		margin-top: -100px;
@@ -835,15 +846,9 @@ body, a {
 	}
 	
 	p, .txt-cntr {
-		font-size: 3.7vw;
+		font-size: 4vw;
 		line-height: 1.4rem;
 	}
-
-	#beers p {
-		font-size: 
-
-	}
-
 
 	.hero {
 		min-height: 667px;
