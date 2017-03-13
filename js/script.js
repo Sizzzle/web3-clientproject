@@ -27,3 +27,10 @@ $(document).ready(function(){
     });
 });
 
+// popup modal
+$(document).ready(function(){
+
+  $('#modalclose').click(function(){
+    $('.modal-container').hide();
+  })
+});

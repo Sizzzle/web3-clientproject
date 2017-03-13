@@ -396,6 +396,46 @@ img {
 	margin-top: 200px;
 }
 
+/*   3.5 - Popup Modal  ------------------------------*/
+
+.modal-container{
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	left: -100%;
+
+	animation: modal 3s forwards;
+	animation-delay: 2s;
+}
+
+.modal-bkg-overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+
+	background-color: black;
+	opacity: .3;
+}
+
+.modal-content {
+	position: relative;
+	z-index: 3;
+	height: 500px;
+	width: 500px;
+	background-color: white;
+	border: solid 3px black;
+}
+
+@keyframes modal {
+	0%{left: -100%}
+	100%{left: 0}
+}
+
 /*==========================================================
 4.0 - MEDIA
 ==========================================================*/
