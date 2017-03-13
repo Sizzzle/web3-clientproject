@@ -93,7 +93,6 @@ h1 {
 	margin-bottom: 150px; 
 }
 
-
 h1 span {
 	font-family: 'DragonisComing';
 	font-weight: 100;
@@ -135,8 +134,6 @@ h4, .mobile-nav li, .text a {
 .mobile-nav li {
 	font-size: .9rem;
 }
-
-
 
 /*   1.2 - Body Copy  ------------------------------------*/
 
@@ -267,7 +264,6 @@ footer p {
 	min-height: 500px;
 }
 
-
 #beers, #contact {
 	height: 130vh;
 	min-height: 1000px;
@@ -363,7 +359,6 @@ img {
 	display: flex;
 	align-self: flex-start;
 }
-
 
 /*   3.4 - Contact Section  ------------------------------*/
 
@@ -494,7 +489,6 @@ body, a {
 6.0 - MEDIA QUERIES
 ==========================================================*/
 
-
 @media screen and (max-width: 1200px) {
 	#contact > div {
 		max-width: 90vw;
@@ -537,7 +531,6 @@ body, a {
 		padding: 0px 6%;
 	}
 
-
 }
 
 @media screen and (max-width: 800px) {
@@ -577,9 +570,6 @@ body, a {
 		flex-direction: column;
 	}
 	
-
-
-
 	h1, .kern {
 		font-size: 5rem;
 		margin-bottom: 100px;
@@ -775,7 +765,6 @@ body, a {
 		line-height: 1.4rem;
 	}
 
-
 	.hero {
 		min-height: 667px;
 	}
@@ -869,17 +858,6 @@ body, a {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
