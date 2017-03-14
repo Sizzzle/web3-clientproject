@@ -13,11 +13,22 @@ $svg.drawsvg('animate');
 
 // Hidden Mobile Navigation
 $(document).ready(function(){
+
+$('#modalclose').click(function(){
+    $('.modal-container').hide();
+  })
+
+ if(localStorage.getItem('popState') != 'shown'){
+        $(".modal-container").addClass('modal-animation');
+        localStorage.setItem('popState','shown')
+    }
+
 	$('.mobile-nav-btn').click(function(e){
 		$('.mobile-nav').slideToggle();
 		// this prevents the browser from doing the default link action
 		e.preventDefault();
 	});
+
 	var $window = $(window);
 	  $window.on('resize', function (){
         if ($window.width() > 800)
@@ -25,12 +36,7 @@ $(document).ready(function(){
             $('.mobile-nav').hide();
         }
     });
+
 });
 
-// popup modal
-$(document).ready(function(){
 
-  $('#modalclose').click(function(){
-    $('.modal-container').hide();
-  })
-});

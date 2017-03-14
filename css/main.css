@@ -409,7 +409,9 @@ img {
 	flex-direction: column;
 
 	top: -100%;
+}
 
+.modal-animation {
 	animation: modal 3s forwards;
 	animation-delay: 2s;
 	z-index: 1000;
