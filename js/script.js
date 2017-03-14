@@ -9,9 +9,7 @@ var $svg = $('svg').drawsvg({
 
 $svg.drawsvg('animate');
 
-
-
-// Hidden Mobile Navigation
+// Over 21 Modal
 $(document).ready(function(){
 
 $('#modalclose').click(function(){
@@ -22,7 +20,8 @@ $('#modalclose').click(function(){
         $(".modal-container").addClass('modal-animation');
         localStorage.setItem('popState','shown')
     }
-
+    
+// Hidden Mobile Navigation
 	$('.mobile-nav-btn').click(function(e){
 		$('.mobile-nav').slideToggle();
 		// this prevents the browser from doing the default link action
