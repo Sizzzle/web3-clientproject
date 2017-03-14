@@ -412,6 +412,7 @@ img {
 
 	animation: modal 3s forwards;
 	animation-delay: 2s;
+	z-index: 1000;
 }
 
 .modal-bkg-overlay {
