@@ -141,7 +141,7 @@ h4, .mobile-nav li, .text a {
 	text-transform: uppercase;
 }
 
-.main-nav, .mobile-nav, #intro, #beers, #social, #contact {
+.main-nav, .mobile-nav, #intro, #beers, #social, #contact, .modal-container {
 	text-align: center;
 }
 
@@ -406,8 +406,9 @@ img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 
-	left: -100%;
+	top: -100%;
 
 	animation: modal 3s forwards;
 	animation-delay: 2s;
@@ -418,8 +419,8 @@ img {
 	height: 100%;
 	width: 100%;
 
-	background-color: black;
-	opacity: .3;
+	background-color: rgba(26,26,26,.95);
+	opacity: .7;
 }
 
 .modal-content {
@@ -429,19 +430,56 @@ img {
 	width: 300px;
 	background-color: rgba(26,26,26,.95);
 	border: solid 3px #F6921E;
-	flex-direction: column;
-	align-items: center;
-}
+	padding: 1.5rem .5rem .5rem .5rem;
 
-.modalclose {
+
+  	font-family: 'Montserrat';
+  	font-size: 14px;
+  	letter-spacing: 1px;
+  	line-height: 28px;
 
 }
 
 @keyframes modal {
-	0%{left: -100%}
-	100%{left: 0}
+	0%{top: -100%}
+	100%{top: 0}
 }
 
+button {
+	border: thin solid #fff;
+	margin: 20px 10px 5px 10px;
+	padding: 15px 50px;
+	text-transform: uppercase;
+	text-decoration: none; 
+	display:inline-block;
+	font-family: 'Montserrat';
+  	font-size: 14px;
+  	letter-spacing: 1px;
+  	line-height: 28px;
+}
+
+button:nth-of-type(2){
+padding: 15px 20px;
+}
+
+button:first-of-type:hover {
+	color: #006600;
+}
+
+button a:hover {
+	color: #990000;
+}
+
+button a {
+	text-transform: uppercase;
+	text-decoration: none; 
+	display:inline-block;
+	font-family: 'Montserrat';
+  	font-size: 14px;
+  	letter-spacing: 1px;
+  	line-height: 28px;
+  	color: rgba(26,26,26,.95);
+}
 /*==========================================================
 4.0 - MEDIA
 ==========================================================*/
