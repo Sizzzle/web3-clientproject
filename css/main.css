@@ -425,10 +425,16 @@ img {
 .modal-content {
 	position: relative;
 	z-index: 3;
-	height: 500px;
-	width: 500px;
-	background-color: white;
-	border: solid 3px black;
+	height: 300px;
+	width: 300px;
+	background-color: rgba(26,26,26,.95);
+	border: solid 3px #F6921E;
+	flex-direction: column;
+	align-items: center;
+}
+
+.modalclose {
+
 }
 
 @keyframes modal {
