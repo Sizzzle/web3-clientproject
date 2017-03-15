@@ -108,7 +108,7 @@ h1 span {
 }
 
 h3 {
-	font-size: 1.6rem;
+	font-size: 3.4rem;
 	font-weight: 900;
 	letter-spacing: .1rem;
 	color: #D5D6D6;
@@ -121,9 +121,10 @@ h4, .mobile-nav li, .text a {
 }
 
 .tagline {
-	font-size: .7rem;
+	font-size: 1rem;
+	line-height: 1.9rem;
 	letter-spacing: .1rem;
-	padding: 1rem 0 2.5rem 0;
+	padding: 2rem 0 2.5rem 0;
 }
 
 .mobile-nav {
@@ -253,6 +254,11 @@ footer p {
 
 /*   3.1 - Site Structure  -------------------------------*/
 
+#intro {
+	height: 100vh;
+	min-height: 900px;
+}
+
 .hero, #about {
 	height: 100vh;
 	min-height: 800px;
@@ -264,7 +270,7 @@ footer p {
 }
 
 #beers, #contact {
-	height: 130vh;
+	height: 110vh;
 	min-height: 1000px;
 }
 
@@ -364,7 +370,6 @@ img {
 }
 
 .snapwidget-widget {
-	padding-top: 50px;
 }
 
 .small {
@@ -404,7 +409,7 @@ img {
 }
 
 #contact > .container {
-	margin-top: 200px;
+	margin-top: 150px;
 }
 
 /*   3.5 - Popup Modal  ------------------------------*/
@@ -499,7 +504,7 @@ button a {
 ==========================================================*/
 
 html { 
-  background: url(../img/maybe-2.jpg) no-repeat center center fixed; 
+  background: url(../img/hero-bg.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -569,6 +574,14 @@ body, a {
 
 .p-b-lg {
 	padding: 25px 125px 150px 125px;
+}
+
+.p-b-md {
+	padding-bottom: 100px;
+}
+
+.p-b-sm {
+	padding-bottom: 25px;
 }
 
 .p-t-lg {
