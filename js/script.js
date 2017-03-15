@@ -3,11 +3,46 @@
 
 // Draw-in Animation
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> dd2aaad74f71e97ce0dabee3ea779626cf3be4af
 var $svg = $('svg').drawsvg({
 			  duration: 3000,
 			  easing: 'linear'
 		});
+<<<<<<< HEAD
+=======
+
+var scroll_start = 0;
+var startchange = $('#beers');
+var offset = startchange.offset();
+console.log(offset);
+if (startchange.length){
+	$(document).scroll(function() { 
+	  scroll_start = $(this).scrollTop();
+	  if(scroll_start > offset.top) {
+	      console.log("fuck ya");
+	   } else {
+	      $svg.drawsvg('animate');
+	   }
+	});
+}
+
+
+	
+		
+    	
+
+
+		
+
+
+
+   
+	
+
+>>>>>>> dd2aaad74f71e97ce0dabee3ea779626cf3be4af
 
 var scroll_start = 0;
 var startchange = $('#beers');
