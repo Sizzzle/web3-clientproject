@@ -434,12 +434,14 @@ img {
 }
 
 .modal-bkg-overlay {
-	position: absolute;
 	height: 100%;
 	width: 100%;
 
 	background-color: rgba(26,26,26,.95);
-	opacity: .7;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .modal-content {
@@ -451,11 +453,15 @@ img {
 	border: solid 3px #F6921E;
 	padding: 1.5rem .5rem .5rem .5rem;
 
-
   	font-family: 'Montserrat';
   	font-size: 14px;
   	letter-spacing: 1px;
   	line-height: 28px;
+
+  	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 
 }
 
