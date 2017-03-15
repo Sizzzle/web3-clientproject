@@ -61,7 +61,6 @@ html * {
   font-family: 'EverAfter';
   src: url('../fonts/EverAfter.eot'); /* IE9 Compat Modes */
   src: url('../fonts/EverAfter.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/EverAfter.woff2') format('woff2'), /* Super Modern Browsers */
        url('../fonts/EverAfter.woff') format('woff'), /* Pretty Modern Browsers */
        url('../fonts/EverAfter.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/EverAfter.svg#svgFontName') format('svg'); /* Legacy iOS */
@@ -360,6 +359,18 @@ img {
 	align-self: flex-start;
 }
 
+#social > div {
+	width: 1000px;
+}
+
+.snapwidget-widget {
+	padding-top: 50px;
+}
+
+.small {
+	display: none;
+}
+
 /*   3.4 - Contact Section  ------------------------------*/
 
 #map {
@@ -593,7 +604,7 @@ body, a {
 	}
 	
 	#social {
-		height: 50vh;
+		height: 80vh;
 		min-height: 690px;
 	}
 	
@@ -605,8 +616,22 @@ body, a {
 	.border-sides {
 		padding: 0px 9%;
 	}
-
+	
+	#social > div {
+		width: 85%;
+	}
+	
+	.copy {
+		font-size: 1.3vw;
+	}
 }
+
+	
+
+
+
+
+
 
 @media screen and (max-width: 900px) {
 
@@ -617,6 +642,8 @@ body, a {
 	.border-sides {
 		padding: 0px 6%;
 	}
+	
+
 
 }
 
@@ -638,13 +665,13 @@ body, a {
 	}
 	
 	#social {
-		height: 75vh;
+		height: 95vh;
 		min-height: 710px;
 	}
 	
 	#beers {
-		height: 200vh;
-		min-height: 2024px;
+		height: 120vh;
+		min-height: 1824px;
 	}
 
 	
@@ -725,7 +752,7 @@ body, a {
 		display: none;
 	}
 
-	.hero, #beers, #social, #about {
+	.hero, #beers, #about {
 		display: block;
 	}
 
@@ -764,7 +791,25 @@ body, a {
 	#contact > div {
 		max-width: 90vw;
 	}
+	
+	.copy {
+		font-size: 1.6vw;
+	}
 
+	
+	
+}
+
+@media screen and (max-width: 600px) {
+	.large {
+		display: none;
+	}
+	
+	.small {
+		display: flex;
+	}
+
+	
 }
 
 
@@ -787,12 +832,12 @@ body, a {
 	}
 	
 	#social {
-		height: 75vh;
+		height: 160vh;
 		min-height: 510px;
 	}
 	
 	#beers {
-		height: 300vh;
+		height: 270vh;
 		min-height: 736px;
 		max-height: 2200px;
 	}
@@ -809,6 +854,12 @@ body, a {
 	#contact .row > div {
 		padding: 25px 0px;
 	}
+	
+	.copy, h4 {
+		font-size: 3.1vw;
+	}
+
+		
 
 
 }
@@ -827,18 +878,18 @@ body, a {
 
 	
 	#about {
-		height: 140vh;
+		height: 130vh;
 		min-height: 736px;
-		max-height: 850px;
+		max-height: 1150px;
 	}
 	
 	#social {
-		height: 75vh;
-		min-height: 510px;
+		height: 170vh;
+		min-height: 580px;
 	}
 	
 	#beers {
-		height: 335vh;
+		height: 290vh;
 		min-height: 736px;
 		max-height: 2200px;
 	}
@@ -884,6 +935,12 @@ body, a {
 	#intro {
 		min-height: 105vh;
 	}
+	
+	.copy, h4 {
+		font-size: 3.1vw;
+	}
+
+	
 
 }
 
@@ -941,6 +998,11 @@ body, a {
 	.p-b-lg {
 		padding-bottom: 100px;
 	}
+	
+	.copy, h4 {
+		font-size: 3.3vw;
+	}
+
 
 
 

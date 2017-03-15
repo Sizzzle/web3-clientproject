@@ -2,23 +2,47 @@
 
 
 // Draw-in Animation
-var $svg = $('svg').drawsvg({
-      duration: 3000,
-      easing: 'linear'
-    });
 
-$svg.drawsvg('animate');
+
+	var $svg = $('svg').drawsvg({
+			  duration: 3000,
+			  easing: 'linear'
+		});
+		
+    	$svg.drawsvg('animate');
+
+
+		
+
+
+
+   
+	
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
 
 // Over 21 Modal
 $(document).ready(function(){
 
 $('#modalclose').click(function(){
     $('.modal-container').hide();
-  })
+  });
 
  if(localStorage.getItem('popState') != 'shown'){
         $(".modal-container").addClass('modal-animation');
-        localStorage.setItem('popState','shown')
+        localStorage.setItem('popState','shown');
     }
     
 // Hidden Mobile Navigation
