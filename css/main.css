@@ -256,22 +256,22 @@ footer p {
 
 #intro {
 	height: 100vh;
-	min-height: 900px;
+	min-height: 950px;
 }
 
 .hero, #about {
 	height: 100vh;
-	min-height: 800px;
+	min-height: 950px;
 }
 
 #social {
 	height: 100vh;
-	min-height: 500px;
+	min-height: 950px;
 }
 
 #beers, #contact {
 	height: 110vh;
-	min-height: 1000px;
+	min-height: 1075px;
 }
 
 .title {
