@@ -602,6 +602,7 @@ body, a {
 	padding-top: 5px;
 }
 
+
 /*==========================================================
 6.0 - MEDIA QUERIES
 ==========================================================*/
@@ -615,7 +616,6 @@ body, a {
 		height: 100vh;
 		min-height: 1366px;
 	}
-
 	
 	#about {
 		height: 50vh;
@@ -645,13 +645,6 @@ body, a {
 	}
 }
 
-	
-
-
-
-
-
-
 @media screen and (max-width: 900px) {
 
 	#contact > div {
@@ -661,9 +654,6 @@ body, a {
 	.border-sides {
 		padding: 0px 6%;
 	}
-	
-
-
 }
 
 @media screen and (max-width: 800px) {
@@ -672,15 +662,14 @@ body, a {
 		height: 100vh;
 		min-height: 1024px;
 	}
-	
+
 	#contact > .container {
 		margin-top: 75px;
 	}
-
 	
 	#about {
-		height: 120vh;
-		min-height: 1200px;
+		height: 110vh;
+		min-height: 1000px;
 	}
 	
 	#social {
@@ -692,7 +681,6 @@ body, a {
 		height: 120vh;
 		min-height: 1824px;
 	}
-
 	
 	p, .txt-cntr {
 		font-size: 2vw;
@@ -706,6 +694,11 @@ body, a {
 	h1, .kern {
 		font-size: 5rem;
 		margin-bottom: 100px;
+	}
+
+	h3 {
+		font-size: 2rem;
+		line-height: 2.5rem;
 	}
 	
 	.title > .row {
@@ -815,8 +808,21 @@ body, a {
 		font-size: 1.6vw;
 	}
 
-	
-	
+	.bar-pic {
+		width: 60%;
+	}
+
+	.col-1-2 {
+		text-align: center;
+	}
+
+	.col-1-2 {
+		padding: 0 3rem;
+	}
+
+	.p-lb-sm {
+		padding-left: 0;
+	}	
 }
 
 @media screen and (max-width: 600px) {
@@ -828,37 +834,45 @@ body, a {
 		display: flex;
 	}
 
-	
+	.tagline {
+		font-size: 3.5vw;
+	}
+
+	.tagline > br {
+		display: none;
+	}	
 }
 
-
 @media screen and (max-width: 500px) {
+
+	.hero, #intro, #about {
+		min-height: 736px;
+	}
 	
 	#contact {
-		height: 130vh;
+		height: 150vh;
 		min-height: 736px;
 	}
 	
 	#contact > .container {
 		margin-top: 75px;
 	}
-
 	
 	#about {
-		height: 130vh;
-		min-height: 536px;
+		height: 150vh;
+		min-height: 36px;
 		max-height: 7800px;
 	}
 	
 	#social {
-		height: 160vh;
-		min-height: 510px;
+		height: 175vh;
+		min-height: 1250px;
 	}
 	
 	#beers {
 		height: 270vh;
-		min-height: 736px;
-		max-height: 2200px;
+		min-height: 2100px;
+		max-height: 2800px;
 	}
 
 	#contact > div {
@@ -878,17 +892,20 @@ body, a {
 		font-size: 3.1vw;
 	}
 
-		
+	.bar-pic {
+		width: 92%;
+	}
 
-
+	.col-1-2 {
+		padding: 0 .5rem;
+	}
 }
-
 
 @media screen and (max-width: 400px) {
 
 	#contact {
-		height: 130vh;
-		min-height: 736px;
+		height: 200vh;
+		min-height: 1000px;
 	}
 	
 	#contact > .container {
@@ -903,13 +920,13 @@ body, a {
 	}
 	
 	#social {
-		height: 170vh;
-		min-height: 580px;
+		height: 185vh;
+		min-height: 1130px;
 	}
 	
 	#beers {
 		height: 290vh;
-		min-height: 736px;
+		min-height: 1935px;
 		max-height: 2200px;
 	}
 
@@ -931,7 +948,7 @@ body, a {
 	}
 
 	#contact > .container {
-		margin-top: 100px;
+		margin-top: 0px;
 	}
 
 	.row > div {
@@ -958,16 +975,9 @@ body, a {
 	.copy, h4 {
 		font-size: 3.1vw;
 	}
-
-	
-
 }
 
-
-
 @media screen and (max-width: 330px) {
-
-
 	#contact {
 		height: 210vh;
 		min-height: 568px;
@@ -977,19 +987,18 @@ body, a {
 		margin-top: 25px;
 	}
 
-	
 	#about {
-		height: 110vh;
+		height: 150vh;
 		min-height: 590px;
 	}
 	
 	#social {
-		height: 70vh;
-		min-height: 490px;
+		height: 190vh;
+		min-height: 568px;
 	}
 	
 	#beers {
-		height: 390vh;
+		height: 360vh;
 		min-height: 736px;
 	}
 
@@ -1003,7 +1012,7 @@ body, a {
 	}
 
 	.hero {
-		min-height: 667px;
+		min-height: 568px;
 	}
 
 	.title {
@@ -1011,7 +1020,8 @@ body, a {
 	}
 
 	#intro {
-		min-height: 100vh;
+		height: 115vh;
+		min-height: 568px;
 	}
 
 	.p-b-lg {
@@ -1021,19 +1031,4 @@ body, a {
 	.copy, h4 {
 		font-size: 3.3vw;
 	}
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
