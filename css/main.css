@@ -618,8 +618,8 @@ body, a {
 	}
 	
 	#about {
-		height: 50vh;
-		min-height: 690px;
+		height: 100vh;
+		min-height: 950px;
 	}
 	
 	#social {
